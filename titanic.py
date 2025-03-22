@@ -5,14 +5,13 @@ Prediction de la survie d'un individu sur le Titanic
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
-
-from sklearn.preprocessing import OneHotEncoder, MinMaxScaler
-from sklearn.model_selection import train_test_split
+from sklearn.compose import ColumnTransformer
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.impute import SimpleImputer
-from sklearn.pipeline import Pipeline
-from sklearn.compose import ColumnTransformer
 from sklearn.metrics import confusion_matrix
+from sklearn.model_selection import train_test_split
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import MinMaxScaler, OneHotEncoder
 
 N_TREES = 20
 MAX_DEPTH = None
